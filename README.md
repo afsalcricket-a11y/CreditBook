@@ -1,13 +1,3 @@
-###  `CreditBook`
-
-#### GitHub "About" Section Details
-* **Description:** `Digital credit ledger (Khata book) web app to record customer transactions, track credit/payments, and calculate live balances.`
-* **Website:** `[https://afsalcricket-a11y.github.io/CreditBook/](https://afsalcricket-a11y.github.io/CreditBook/)`
-* **Topics:** `credit-book`, `khata-app`, `ledger`, `finance-tracker`, `accounting`, `javascript`, `web-app`, `github-pages`
-
-#### Ready-to-Paste `README.md`
-
-```markdown
 # 📒 CreditBook — Digital Ledger & Credit Tracker
 
 **CreditBook** is a lightweight digital *Khata* (ledger) application built for small shopkeepers, freelancers, and local businesses to replace paper credit notebooks with accurate, real-time balance tracking.
