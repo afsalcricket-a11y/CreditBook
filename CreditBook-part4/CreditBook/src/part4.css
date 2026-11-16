@@ -1,0 +1,12 @@
+.bottom-nav a span { font-size: 11px; }
+.filters { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.filters label { margin: 0; }
+.tx { display: flex; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.tx:last-child { border-bottom: 0; }
+.tx small { display: block; color: var(--muted); }
+.tx .right { text-align: right; white-space: nowrap; }
+.wa { background: #25d366 !important; color: #fff !important; text-align: center; display: block; }
+.wa.off { opacity: .5; pointer-events: none; }
+.totals { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 12px 0; }
+.totals div { background: var(--bg); border-radius: 12px; padding: 10px; font-size: 12px; color: var(--muted); }
+.totals b { display: block; font-size: 15px; margin-top: 3px; }

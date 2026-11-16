@@ -1,0 +1,52 @@
+:root {
+  --bg: #f4f6f8; --card: #ffffff; --text: #0f172a; --muted: #64748b; --border: #e2e8f0;
+  --primary: #16a34a; --green: #16a34a; --red: #dc2626; --orange: #ea580c;
+}
+[data-theme='dark'] {
+  --bg: #0b1220; --card: #141c2e; --text: #e5e7eb; --muted: #94a3b8; --border: #263146;
+}
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+h1, h2 { margin: 0 0 8px; }
+a { color: var(--primary); text-decoration: none; font-weight: 600; }
+.muted { color: var(--muted); font-size: 14px; }
+.error { color: var(--red); font-size: 14px; }
+.success { color: var(--green); font-size: 14px; }
+.center { display: grid; place-items: center; height: 100%; }
+
+.card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+  padding: 18px; margin-bottom: 14px; box-shadow: 0 1px 3px rgba(0,0,0,.06);
+}
+label { display: block; font-size: 14px; font-weight: 600; margin: 12px 0; }
+input, select, textarea {
+  display: block; width: 100%; margin-top: 6px; padding: 12px; font-size: 16px;
+  border: 1px solid var(--border); border-radius: 10px; background: var(--bg); color: var(--text);
+}
+input:disabled { opacity: .6; }
+.btn {
+  width: 100%; padding: 13px; font-size: 16px; font-weight: 700; color: #fff; background: var(--primary);
+  border: 0; border-radius: 10px; cursor: pointer; margin: 8px 0;
+}
+.btn:disabled { opacity: .6; cursor: not-allowed; }
+.btn.danger { background: var(--red); }
+
+.auth-page { min-height: 100%; display: grid; place-items: center; padding: 16px; }
+.auth-card { width: 100%; max-width: 400px; }
+
+.app-shell { min-height: 100%; display: flex; flex-direction: column; }
+.topbar {
+  position: sticky; top: 0; z-index: 5; padding: 14px 16px; padding-top: calc(14px + env(safe-area-inset-top));
+  background: var(--primary); color: #fff; font-weight: 800; font-size: 18px;
+}
+.content { flex: 1; width: 100%; max-width: 720px; margin: 0 auto; padding: 16px 16px 90px; }
+.bottom-nav {
+  position: fixed; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-around;
+  background: var(--card); border-top: 1px solid var(--border); padding: 8px 0 calc(8px + env(safe-area-inset-bottom));
+}
+.bottom-nav a { display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 12px; color: var(--muted); }
+.bottom-nav a.active { color: var(--primary); }
